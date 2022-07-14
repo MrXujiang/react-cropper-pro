@@ -1,0 +1,30 @@
+{
+  "crop": {
+    "default": [
+      {
+        "identifier": "defaultImg",
+        "description": "默认图片",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "identifier": "imgData",
+        "description": "图片数据",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "identifier": "onChange",
+        "description": "裁切成功回调",
+        "type": "(file: File) => void",
+        "default": "-"
+      },
+      {
+        "identifier": "onDel",
+        "description": "图片删除的回调",
+        "type": "(url: string) => void",
+        "default": "-"
+      }
+    ]
+  }
+}

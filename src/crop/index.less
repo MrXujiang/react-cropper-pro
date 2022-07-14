@@ -1,0 +1,133 @@
+@import '../theme.less';
+
+.xi-cropper-wrap {
+  display: inline-block;
+  .xi-cropper-upload {
+    input {
+      position: absolute;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .xi-cropper-file {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      font-size: 24px;
+      color: #ccc;
+      border-radius: 6px;
+      background-color: rgba(224, 222, 222, .2);
+      border: 1px solid #d0cfcf;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .xi-cropper-del {
+        display: inline-block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        line-height: 16px;
+        font-size: 12px;
+        background-color: rgb(202, 51, 5);
+        color: #fff;
+        right: -6px;
+        top: -6px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 11;
+      }
+    }
+  }
+}
+
+.xi-cropper-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .xi-cropper-modalMask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0,0,0, .3);
+  }
+  .cropper-modal-content {
+    position: relative;
+    z-index: 10000;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    background-color: #fff;
+    .cropper-modal-header {
+      padding: 0 16px;
+      line-height: 2.4;
+      font-size: 14px;
+      .cropper-modal-close-btn {
+        color: #ccc;
+        float: right;
+        cursor: pointer;
+      }
+    }
+    .crop-controlWrap {
+      padding: 6px 12px;
+      display: flex;
+      justify-content: center;
+      .crop-control {
+        margin-right: 12px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        .crop-control-item {
+          margin-right: 6px;
+          display: inline-block;
+          padding: 1px 3px;
+          border-radius: 2px;
+          color: rgb(130, 128, 128);
+          input {
+            width: 68px;
+          }
+          cursor: pointer;
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+    }
+    .cropper-modal-footer {
+      padding: 10px 16px;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 14px;
+      border-top: 1px solid #f0f0f0;
+      .modal-ok, .modal-cancel {
+        color: #fff;
+        background-color: #06c;
+        border-radius: 6px;
+        padding: 2px 10px;
+        cursor: pointer;
+      }
+      .modal-cancel {
+        margin-right: 12px;
+        background-color: #f0f0f0;
+        color: #808080;
+      }
+    }
+  }
+}

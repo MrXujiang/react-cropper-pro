@@ -1,0 +1,40 @@
+{
+  "menus": {
+    "en-US": {
+      "*": [
+        {
+          "path": "/",
+          "title": "Hello react-cropper-pro!",
+          "meta": {}
+        },
+        {
+          "title": "Crop",
+          "path": "/crop",
+          "meta": {},
+          "children": [
+            {
+              "path": "/crop",
+              "title": "基本使用",
+              "meta": {}
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {},
+  "title": "cropper-pro",
+  "logo": "http://h5.dooring.cn/uploads/logo_1742fd359da.png",
+  "mode": "doc",
+  "repository": {
+    "url": "https://github.com/MrXujiang/react-loading",
+    "branch": "master"
+  },
+  "theme": {}
+}
