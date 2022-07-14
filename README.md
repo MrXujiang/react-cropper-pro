@@ -23,7 +23,7 @@ export default () =>
 
 ### 演示 | Demo
 
-<a href="/crop">Demo</a>
+<a href="http://h5.dooring.cn/react-cropper-pro">Demo</a>
 
 ### 更多产品推荐 | More Production
 
