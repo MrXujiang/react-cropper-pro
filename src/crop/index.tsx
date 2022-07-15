@@ -27,6 +27,7 @@ const imgLevelValueMap = {
 const CropperPro: React.FC<IProp> = ({
   defaultImg = '',
   imgData = '',
+  defaultLevel = 4,
   onChange,
   onDel
 }) => {
@@ -34,7 +35,7 @@ const CropperPro: React.FC<IProp> = ({
   const [cropData, setCropData] = useState(imgData || defaultImg);
   const [cropper, setCropper] = useState<any>();
   const [visable, setVisable] = useState(0);
-  const [imgLevel, setImgLevel] = useState(2);
+  const [imgLevel, setImgLevel] = useState(defaultLevel);
   const fileRef = useRef<any>(null);
   const handleChange = (e: any) => {
     e.preventDefault();

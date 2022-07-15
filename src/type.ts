@@ -12,6 +12,11 @@ export interface IProp {
    */
   imgData?: string;
   /**
+   * @description   默认的图片质量等级
+   * @default       4 (1: 低, 2: 中, 3: 高, 4: 不压缩)
+   */
+   defaultLevel?: number;
+  /**
    * @description   裁切成功回调
    * @default       -
    */
