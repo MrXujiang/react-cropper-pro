@@ -21,7 +21,7 @@ export default () =>
   />;
 ```
 
-### 演示 | Demo
+### 演示 & 文档 | Demo
 
 <a href="http://h5.dooring.cn/react-cropper-pro">Demo</a>
 
